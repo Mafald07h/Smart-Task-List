@@ -1,11 +1,16 @@
-
 body {
-    background-color: var(--background-green);
+    background: #63ff63;
+    background: linear-gradient(360deg, rgba(99, 255, 99, 1) 0%, rgba(131, 255, 112, 1) 11%, rgba(119, 247, 119, 1) 32%, rgba(173, 255, 92, 1) 100%);
     height: 100vh;
 }
 
 .container {
     padding: 20px;
+    border: 3px solid var(--white);
+    background-color: rgba(255,255,255,0.2);
+    margin: 60px 150px;
+    box-shadow: 2px 3px 10px var(--black);
+    border-radius: 10px;
 }
 
 .form {
@@ -13,15 +18,19 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .label__form {
     margin: 10px auto;
-    text-align: left;
+    font-size: 1.5rem;
+    margin-left: 20px;
 }
 
 .input__form {
     padding: 4px 15px;
+    width: 90%;
 }
 
 .btn__login {
@@ -29,4 +38,6 @@ body {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    background-color: var(--background-green);
+    width: 50%;
 }
