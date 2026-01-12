@@ -11,6 +11,11 @@
 <body>
     <main>
         <div class="container">
+            {% for message in messages%}
+                <div class="message__show">
+                    <p>{{message}}</p>
+                </div>
+            {% endfor %}
             <form action="{% url 'login' %}" method="post" class="form">
                 {% csrf_token %}
                 <label for="username" class="label__form">Username</label>
