@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/signin.css'%}">
+    <link rel="stylesheet" href="{% static 'css/signin.css'%}?v=3.0">
     <title>Sign in - page</title>
 </head>
 <body>
     <main>
         <div class="container">
-            <form action="{% url 'login' %}" method="post">
+            <form action="{% url 'login' %}" method="post" class="form">
                 {% csrf_token %}
-                <label for="username">Username</label>
-                <input type="text" required placeholder="Username" name="username">
-                <label for="senha">Password</label>
-                <input type="password" required placeholder="Password" name="senha">
-                <button type="submit">Login</button>
+                <label for="username" class="label__form">Username</label>
+                <input type="text" required placeholder="Username" name="username" class="input__form">
+                <label for="senha" class="label__form">Password</label>
+                <input type="password" required placeholder="Password" name="senha" class="input__form">
+                <button type="submit" class="btn__login">Login</button>
             </form>
         </div>
     </main>
