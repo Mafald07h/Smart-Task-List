@@ -11,7 +11,7 @@
 <body>
     <main>
         <div class="container">
-            <form action="" method="post">
+            <form action="{% url 'login' %}" method="post">
                 {% csrf_token %}
                 <label for="username">Username</label>
                 <input type="text" required placeholder="Username" name="username">
