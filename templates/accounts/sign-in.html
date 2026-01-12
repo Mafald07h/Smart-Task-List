@@ -12,6 +12,7 @@
     <main>
         <div class="container">
             <form action="" method="post">
+                {% csrf_token %}
                 <label for="username">Username</label>
                 <input type="text" required placeholder="Username" name="username">
                 <label for="senha">Password</label>
