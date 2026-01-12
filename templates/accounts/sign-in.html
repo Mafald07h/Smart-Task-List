@@ -4,12 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/signin.css'%}">
     <title>Sign in - page</title>
 </head>
 <body>
     <main>
-        
+        <div class="container">
+            <form action="" method="post">
+                <label for="username">Username</label>
+                <input type="text" required placeholder="Username" name="username">
+                <label for="senha">Password</label>
+                <input type="password" required placeholder="Password" name="senha">
+                <button type="submit">Login</button>
+            </form>
+        </div>
     </main>
 </body>
 </html>
