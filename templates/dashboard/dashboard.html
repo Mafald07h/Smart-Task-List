@@ -1,20 +1,29 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}?v=3.0">
+    <title>Dashboard - Page </title>
 </head>
 
 <body>
     <main>
-        {% for message in messages%}
-            <div class="message__show">
-                <p>{{message}}</p>
+        <div class="navbar__left">
+            <div class="tasks">
+                <a href="#" class="dashboard__link">Logout</a>
             </div>
-        {% endfor %}
-        <h1>Dashboard test</h1>
+        </div>
+        <section>
+            {% for message in messages%}
+                <div class="message__show">
+                    <p>{{message}}</p>
+                </div>
+            {% endfor %}
+            <h1>Dashboard</h1>
+        </section>
     </main>
 </body>
 
