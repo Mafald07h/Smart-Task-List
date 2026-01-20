@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/signin.css'%}?v=3.2">
-    <title>Sign in - page</title>
+    <title>Sign In</title>
 </head>
 <body>
     <main>
         <div class="container__title">
-            <h1 class="title">📝Small Tasks List </h1>
+            <h1 class="title">📝<em>Small Tasks List</em> </h1>
         </div>
         <div class="container">
             {% for message in messages%}
@@ -26,6 +26,7 @@
                 <label for="senha" class="label__form">Password</label>
                 <input type="password" required placeholder="Password" name="senha" class="input__form">
                 <button type="submit" class="btn__login">Login</button>
+                <a href="{% url 'cadastro' %}">Dont have account ? Sign up</a>
             </form>
         </div>
     </main>

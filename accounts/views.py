@@ -25,3 +25,6 @@ def sign_in(request):
             messages.error(request,"Usuário ou senha incorretos")
             return redirect("login")
     return render(request,"accounts/sign-in.html",{"form":form})
+
+def sign_up(request):
+    return render(request,"accounts/sign-up.html")
