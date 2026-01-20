@@ -55,12 +55,15 @@ main {
     border: none;
     cursor: pointer;
     background-color: var(--white);
-    border: 1px solid var(--black);
+    box-shadow: 1px 1px 10px var(--black);
     width: 50%;
+    transition: 200ms ease-in-out;
 }
 
 .btn__login:hover {
+    transition: 200ms;
     background-color: var(--black);
+    color: var(--white);
 }
 
 .form__link {
