@@ -59,6 +59,10 @@ main {
     width: 50%;
 }
 
+.btn__login:hover {
+    background-color: var(--black);
+}
+
 .form__link {
     font-size: 0.9rem;
     margin-top: 15px;

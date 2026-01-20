@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}?v=3.0">
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}?v=3.1">
+    <script src="{% static 'script/dashboard.js' %}" defer></script>
     <title>Dashboard - Page </title>
 </head>
 
@@ -22,7 +23,14 @@
                     <p>{{message}}</p>
                 </div>
             {% endfor %}
-            <h1>Dashboard</h1>
+             <h1 class="title">Dashboard</h1>
+            <section class="section__informations">
+                <div class="itens">
+                    <div class="item"><p>TASKS COMPLETED</p></div>
+                    <div class="item"><p>PENDING TASKS</p></div>
+                    <div class="item"><p>WEEKLY EFFICIENCY</p></div>
+                </div>
+            </section>
         </section>
     </main>
 </body>
