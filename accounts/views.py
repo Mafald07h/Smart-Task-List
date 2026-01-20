@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from django.contrib import messages
-from django.contrib.auth import authenticate,login,logout
+from django.contrib.auth import authenticate,login,logout 
 from django.contrib.auth.models import User
 from accounts.forms import LoginForm
 
@@ -28,3 +28,8 @@ def sign_in(request):
 
 def sign_up(request):
     return render(request,"accounts/sign-up.html")
+
+def logout_account(request):
+    logout(request)
+    messages.success(request,"Logout realizado com sucesso!!")
+    return redirect("login")
