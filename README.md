@@ -2,7 +2,7 @@
 <img width="1360" height="631" alt="Image" src="https://github.com/user-attachments/assets/aac38e48-da2a-4516-92ef-07208d02caf3" /><br>
 <em>Figura 01 - Sign in image</em>
 
-<img width="1355" height="727" alt="Image" src="https://github.com/user-attachments/assets/18c791d8-e93c-46ef-a0d5-d4ad07f40a07" />
+<img width="1355" height="727" alt="Image" src="https://github.com/user-attachments/assets/18c791d8-e93c-46ef-a0d5-d4ad07f40a07" /><br>
 <em>Figura 02 - Sign up image</em>
 
 
