@@ -9,6 +9,25 @@
     <title>Sign Up</title>
 </head>
 <body>
-
+    <main>
+        <div class="container__title">
+            <h1 class="title">📝<em>Sign up in page</em></h1>
+        </div>
+        <div class="container">
+            <form action="#" method="post"  class="form">
+                {% csrf_token %}
+                <label for="username" class="label__form">Username</label>
+                <input type="text" required placeholder="Username" name="username" class="input__form">
+                <label for="email" class="label__form">Email</label>
+                <input type="email" required placeholder="Email" name="email" class="input__form">
+                <label for="senha1" class="label__form">Password</label>
+                <input type="password" required placeholder="Password" name="senha1" class="input__form">
+                <label for="senha2" class="label__form">Confirm password</label>
+                <input type="password" required placeholder="Password" name="senha2" class="input__form">
+                <button type="submit" class="btn__login">Sign Up</button>
+                <a href="{% url 'login' %}" class="form__link">Have an account ? Sign in</a>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
