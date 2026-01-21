@@ -1,1 +1,3 @@
-// window.alert("Testando Javascript")
+const tasksSuccess = document.getElementById("tasks_completed")
+const tasksNotSuccess = document.getElementById("pendind_tasks")
+const tesksEfficiency = document.getElementById("efficiency")
