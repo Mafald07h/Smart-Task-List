@@ -1,10 +1,14 @@
-
 body {
-    background-color: #eeeeee;
+    background: #77ff75;
+    background: linear-gradient(90deg, rgba(119, 255, 117, 1) 0%, rgba(172, 255, 94, 1) 23%, rgba(235, 235, 235, 1) 57%, rgba(250, 250, 250, 1) 100%);
 }
 
 main {
     display: flex;
+}
+
+.message__show {
+    margin-left: 30px;
 }
 
 .navbar__left {
@@ -29,4 +33,17 @@ main {
 .title {
     margin-left: 30px;
     font-size: 4rem;
+}
+
+.itens {
+    display: flex;
+    justify-content: space-around;
+    gap: 150px;
+    width: 100%;
+}
+
+.item {
+    background-color: #398337;
+    width: 120px;
+    height: 120px;
 }

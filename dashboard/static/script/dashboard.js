@@ -1,1 +1,1 @@
-window.alert("Testando Javascript")
+// window.alert("Testando Javascript")
