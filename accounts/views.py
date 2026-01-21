@@ -2,7 +2,7 @@ from django.shortcuts import render,redirect
 from django.contrib import messages
 from django.contrib.auth import authenticate,login,logout 
 from django.contrib.auth.models import User
-from accounts.forms import LoginForm
+from accounts.forms import LoginForm,CadastroForm
 
 # Create your views here.
 def sign_in(request):
@@ -27,6 +27,12 @@ def sign_in(request):
     return render(request,"accounts/sign-in.html",{"form":form})
 
 def sign_up(request):
+    form = CadastroForm(request.POST)
+    if request.method == "POST":
+        username = form["username"].value()
+        email = form["email"].value()
+        senha1 = form["senha1"].value()
+        senha2 = form["senha2"].value()
     return render(request,"accounts/sign-up.html")
 
 def logout_account(request):
