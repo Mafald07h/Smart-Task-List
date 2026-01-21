@@ -2,6 +2,7 @@
 @import url("/accounts/static/css/signin.css");
 @import url("/accounts/static/css/signup.css");
 @import url("/dashboard/static/css/dashboard.css");
+@import url("/tasks/static/css/tasks.css");
 
 * {
     margin: 0;
