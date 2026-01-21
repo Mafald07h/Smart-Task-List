@@ -33,6 +33,20 @@ def sign_up(request):
         email = form["email"].value()
         senha1 = form["senha1"].value()
         senha2 = form["senha2"].value()
+
+        if senha1 != senha2:
+            messages.error(request,"As senhas precisam ser iguais.")
+            return redirect("cadastro")
+        if User.objects.filter(username=username).exists():
+            messages.error(request,"Usuário já cadastrado.")
+            return redirect("cadastro")
+        if User.objects.filter(email=email).exists():
+            messages.error(request,"Email já cadastrado.")
+            return redirect("cadastro")
+        
+        user = User.objects.create_user(username=username,password=senha1,email=email)
+        user.save()
+        return redirect("login")
     return render(request,"accounts/sign-up.html")
 
 def logout_account(request):

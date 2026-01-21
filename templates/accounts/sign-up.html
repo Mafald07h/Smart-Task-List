@@ -14,7 +14,7 @@
             <h1 class="title">📝<em>Sign up in page</em></h1>
         </div>
         <div class="container">
-            <form action="#" method="post"  class="form">
+            <form action="{% url 'cadastro' %}" method="post" class="form">
                 {% csrf_token %}
                 <label for="username" class="label__form">Username</label>
                 <input type="text" required placeholder="Username" name="username" class="input__form">
