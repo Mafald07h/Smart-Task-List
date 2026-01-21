@@ -72,3 +72,7 @@ main {
     color: var(--black);
     text-decoration: none;
 }
+
+.form__link:active {
+    color: blue;
+}
