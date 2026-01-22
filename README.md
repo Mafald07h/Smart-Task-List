@@ -5,6 +5,8 @@
 <img width="1355" height="727" alt="Image" src="https://github.com/user-attachments/assets/18c791d8-e93c-46ef-a0d5-d4ad07f40a07" /><br>
 <em>Figura 02 - Sign up image</em>
 
+<img width="1363" height="636" alt="Image" src="https://github.com/user-attachments/assets/010eb2e4-aa22-4cf8-8c7a-48d054eddae5" />
+<em>Figura 03 - Dashboard</em>
 
 📝 Lista de tarefas inteligente com as teconolgias de HTMl+CSS+JS+Python&amp;Django, com Login e Cadastro de tarefas, trazendo uma interface minimalista e agradavel. 📝
 
