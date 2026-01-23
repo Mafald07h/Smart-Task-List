@@ -19,7 +19,20 @@
             </div>
         </div>
         <table>
-            
+            <tr>
+                <th>Nome da task</th>
+                <th>Data de início</th>
+                <th>Data de fim</th>
+                <th>Descrição</th>
+            </tr>
+            {% for task in tasks %}
+            <tr>
+                <td>{{task.nome_task}}</td>
+                <td>{{task.data_inicio}}</td>
+                <td>{{task.data_fim}}</td>
+                <td>{{task.descricao}}</td>
+            </tr>
+            {% endfor %}
         </table>
         {% endblock %}
     </main>
