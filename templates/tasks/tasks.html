@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/tasks.css' %}?v=3.1">
+    <link rel="stylesheet" href="{% static 'css/tasks.css' %}?v=3.2">
     <title>Create Tasks - Page</title>
 </head>
 <body>
@@ -14,8 +14,8 @@
         {% block content %}
         <div class="navbar__left">
             <div class="tasks">
-                <a href="{% url 'logout_account' %}" class="dashboard__link">Logout</a>
-                <a href="{% url 'dashboard' %}" class="dashboard__link">Dashboard</a>
+                <a href="{% url 'logout_account' %}" class="dashboard__link"><img width="48" height="48" src="https://img.icons8.com/color/48/circled-right--v1.png" alt="circled-right--v1"/>Logout</a>
+                <a href="{% url 'dashboard' %}" class="dashboard__link"><img width="48" height="48" src="https://img.icons8.com/color/48/circled-right--v1.png" alt="circled-right--v1"/>Dashboard</a>
             </div>
         </div>
         {% endblock %}

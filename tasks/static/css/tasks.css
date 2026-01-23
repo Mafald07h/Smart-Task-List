@@ -1,3 +1,12 @@
 main {
     display: flex;
 }
+.dashboard__link {
+    position: relative;
+    margin-left: 70px;
+}
+
+.dashboard__link img {
+    position: absolute;
+    right: 70px;
+}
