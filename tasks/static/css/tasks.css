@@ -65,6 +65,7 @@ main {
 .container-tasks-show {
     display: block;
     background-color: var(--white);
+    box-shadow: 1px 1px 10px var(--black);
     padding: 20px;
     margin-top: 20px;
     width: auto;
@@ -78,6 +79,7 @@ form {
 
 .input-tasks {
     width: 25%;
+    padding: 3px 10px;
 }
 
 .btn-add {
@@ -85,6 +87,9 @@ form {
     margin-top: 10px;
     padding: 5px 20px;
     cursor: pointer;
+    background-color: rgb(184, 33, 126);
+    border: none;
+    color: var(--white);
 }
 
 .btn-del-task {
