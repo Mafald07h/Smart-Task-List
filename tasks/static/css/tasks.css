@@ -68,7 +68,7 @@ main {
     box-shadow: 1px 1px 10px var(--black);
     padding: 20px;
     margin-top: 20px;
-    width: auto;
+    width: 75%;
 }
 
 form {
@@ -78,7 +78,7 @@ form {
 }
 
 .input-tasks {
-    width: 25%;
+    width: 275px;
     padding: 3px 10px;
 }
 
