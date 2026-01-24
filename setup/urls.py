@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from dashboard.views import dashboard
-from tasks.views import tasks_view,add_tasks
+from tasks.views import tasks_view,add_tasks,delete_task
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,4 +25,5 @@ urlpatterns = [
     path('',include('accounts.urls')),
     path('tasks/',tasks_view,name="tasks"),
     path('add_task/',add_tasks,name="add_task"),
+    path('delete_task',delete_task,name="delete_task"),
 ]

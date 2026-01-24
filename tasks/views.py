@@ -16,3 +16,12 @@ def add_tasks(request):
             user = request.user
         )
     return redirect("tasks")
+
+def delete_task(request):
+    if request.method == "POST":
+        task_id = request.POST.get("task_id")
+        Task.objects.filter(
+            id=task_id,
+            user = request.user
+        ).delete()
+    return redirect("tasks")

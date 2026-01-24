@@ -31,7 +31,11 @@
                 <td>{{ task.data_fim }}</td>
                 <td>{{ task.descricao }}</td>
                 <td>
-                    <button class="btn-del-task"><img width="24" height="24" src="https://img.icons8.com/liquid-glass/48/trash.png" alt="trash"/>Excluir</button>
+                    <form action="{% url 'delete_task' %}" method="post">
+                        {% csrf_token %}
+                        <input type="hidden" name="task_id" value="{{task.id}}">
+                        <button class="btn-del-task" type="submit"><img width="24" height="24" src="https://img.icons8.com/liquid-glass/48/trash.png" alt="trash"/>Excluir</button>
+                    </form>
                 </td>
             </tr>
             {% endfor %}
