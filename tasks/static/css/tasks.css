@@ -42,3 +42,12 @@ main {
     font-size: 1.1rem;
     padding: 0px 20px;
 }
+
+.btn-add-task {
+    background-color: #3bbb38;
+    color: var(--white);
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}

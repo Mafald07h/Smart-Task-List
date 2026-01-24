@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/tasks.css' %}?v=3.3">
+<link rel="stylesheet" href="{% static 'css/tasks.css' %}?v=3.4">
 {% endblock %}
 
 {% block content %}
@@ -31,6 +31,7 @@
             </tr>
             {% endfor %}
         </table>
+        <button class="btn-add-task">Adicionar task</button>
     </section>
 </main>
 {% endblock %}
