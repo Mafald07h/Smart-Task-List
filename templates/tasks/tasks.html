@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/tasks.css' %}?v=3.3">
+<link rel="stylesheet" href="{% static 'css/tasks.css' %}?v=3.4">
 <script src="{% static 'script/tasks.js' %}" defer></script>
 {% endblock %}
 
@@ -22,6 +22,7 @@
                 <th>Data de início</th>
                 <th>Data de fim</th>
                 <th>Descrição</th>
+                <th>Mais opções</th>
             </tr>
             {% for task in tasks %}
             <tr>
@@ -29,6 +30,9 @@
                 <td>{{ task.data_inicio }}</td>
                 <td>{{ task.data_fim }}</td>
                 <td>{{ task.descricao }}</td>
+                <td>
+                    <button class="btn-del-task">Excluir</button>
+                </td>
             </tr>
             {% endfor %}
         </table>
