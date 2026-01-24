@@ -37,14 +37,14 @@
             <form action="{% url 'add_task' %}" method="post">
                 {% csrf_token %}
                 <label for="nome_task">Nome da Task</label>
-                <input type="text" placeholder="Nome da task" required name="nome_task">
+                <input type="text" placeholder="Nome da task" required name="nome_task" class="input-tasks">
                 <label for="nome_task">Data de inicio</label>
-                <input type="date" required name="data_inicio">
+                <input type="date" required name="data_inicio" class="input-tasks">
                 <label for="nome_task">Data fim</label>
-                <input type="date" required name="data_fim">
+                <input type="date" required name="data_fim" class="input-tasks">
                 <label for="nome_task">Descrição</label>
-                <input type="text" required name="descricao">
-                <button type="submit">Adicionar Task</button>
+                <input type="text" required name="descricao" class="input-tasks">
+                <button type="submit" class="btn-add">Adicionar Task</button>
             </form>
         </div>
     </section>

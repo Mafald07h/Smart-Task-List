@@ -12,7 +12,7 @@ main {
     box-shadow: 1px 5px 10px var(--black);
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: auto;
     width: 20%;
 }
 
@@ -64,4 +64,25 @@ main {
 
 .container-tasks-show {
     display: block;
+    background-color: var(--white);
+    padding: 20px;
+    margin-top: 20px;
+    width: auto;
+}
+
+form {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.input-tasks {
+    width: 25%;
+}
+
+.btn-add {
+    width: 25%;
+    margin-top: 10px;
+    padding: 5px 20px;
+    cursor: pointer;
 }
