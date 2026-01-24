@@ -50,4 +50,18 @@ main {
     border: none;
     cursor: pointer;
     margin-top: 10px;
+    transition: 200ms ease-in-out;
+}
+
+.btn-add-task:hover {
+    background-color: #1e691d;
+    transition: 200ms;
+}
+
+.container-tasks-none {
+    display: none;
+}
+
+.container-tasks-show {
+    display: block;
 }

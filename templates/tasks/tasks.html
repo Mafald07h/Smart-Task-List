@@ -2,7 +2,8 @@
 {% load static %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/tasks.css' %}?v=3.4">
+<link rel="stylesheet" href="{% static 'css/tasks.css' %}?v=3.3">
+<script src="{% static 'script/tasks.js' %}" defer></script>
 {% endblock %}
 
 {% block content %}
@@ -31,7 +32,21 @@
             </tr>
             {% endfor %}
         </table>
-        <button class="btn-add-task">Adicionar task</button>
+        <button class="btn-add-task" id="addTasks">Adicionar task</button>
+        <div id="container-tasks" class="container-tasks-none">
+            <form action="{% url 'add_task' %}" method="post">
+                {% csrf_token %}
+                <label for="nome_task">Nome da Task</label>
+                <input type="text" placeholder="Nome da task" required name="nome_task">
+                <label for="nome_task">Data de inicio</label>
+                <input type="date" required name="data_inicio">
+                <label for="nome_task">Data fim</label>
+                <input type="date" required name="data_fim">
+                <label for="nome_task">Descrição</label>
+                <input type="text" required name="descricao">
+                <button type="submit">Adicionar Task</button>
+            </form>
+        </div>
     </section>
 </main>
 {% endblock %}
