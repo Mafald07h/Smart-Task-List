@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/tasks.css' %}?v=3.2">
+<link rel="stylesheet" href="{% static 'css/tasks.css' %}?v=3.3">
 {% endblock %}
 
 {% block content %}
@@ -13,22 +13,24 @@
             <a href="{% url 'dashboard' %}" class="dashboard__link">Dashboard</a>
         </div>
     </div>
-
-    <table>
-        <tr>
-            <th>Nome da task</th>
-            <th>Data de início</th>
-            <th>Data de fim</th>
-            <th>Descrição</th>
-        </tr>
-        {% for task in tasks %}
-        <tr>
-            <td>{{ task.nome_task }}</td>
-            <td>{{ task.data_inicio }}</td>
-            <td>{{ task.data_fim }}</td>
-            <td>{{ task.descricao }}</td>
-        </tr>
-        {% endfor %}
-    </table>
+    <section class="section-tasks">
+        <h1 class="title">Tasks</h1>
+        <table class="table-tasks">
+            <tr>
+                <th>Nome da task</th>
+                <th>Data de início</th>
+                <th>Data de fim</th>
+                <th>Descrição</th>
+            </tr>
+            {% for task in tasks %}
+            <tr>
+                <td>{{ task.nome_task }}</td>
+                <td>{{ task.data_inicio }}</td>
+                <td>{{ task.data_fim }}</td>
+                <td>{{ task.descricao }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </section>
 </main>
 {% endblock %}

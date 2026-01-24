@@ -19,9 +19,26 @@ main {
 .dashboard__link {
     position: relative;
     margin-left: 70px;
+    padding-right: 20px;
 }
 
 .dashboard__link img {
     position: absolute;
-    right: 100px;
+    right: 10px;
+}
+
+.section-tasks {
+    margin-left: 40px;
+}
+
+.table-tasks {
+    height: 25%;
+    width: 75%;
+}
+
+.table-tasks tr,th,td {
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    font-size: 1.1rem;
+    padding: 0px 20px;
 }
