@@ -114,4 +114,16 @@ main {
     .texts {
         text-align: center;
     }
+
+    .itens {
+        display: flex;
+    }
+
+    .item {
+        margin-left: 2px;
+    }
+}
+
+@media (max-width:911px){
+    
 }
