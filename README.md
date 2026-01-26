@@ -8,6 +8,9 @@
 <img width="1363" height="636" alt="Image" src="https://github.com/user-attachments/assets/010eb2e4-aa22-4cf8-8c7a-48d054eddae5" />
 <em>Figura 03 - Dashboard</em>
 
+<img width="1357" height="633" alt="Image" src="https://github.com/user-attachments/assets/f7d5faf3-88a3-4549-a63f-b80801e66073" />
+<em>Figura 04 - Tasks page</em><br>
+
 📝 Lista de tarefas inteligente com as teconolgias de HTMl+CSS+JS+Python&amp;Django, com Login e Cadastro de tarefas, trazendo uma interface minimalista e agradavel. 📝
 
 ## Tecnologias utilizadas para a produção do projeto
