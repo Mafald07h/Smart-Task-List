@@ -137,5 +137,11 @@ form {
     th,
     td {
         padding: 0px 1px;
+        font-size: 0.7rem;
+    }
+
+    .btn-del-task {
+        width: 100%;
+        padding: 4px 10px;
     }
 }
