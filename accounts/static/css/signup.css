@@ -57,6 +57,12 @@ main {
     background-color: var(--white);
     border: 1px solid var(--black);
     width: 50%;
+    transition: 200ms ease-in-out;
+}
+
+.btn__create:hover {
+    background-color: rgba(0, 255, 0,0.3);
+    transition: 200ms;
 }
 
 .form__link {
