@@ -92,6 +92,12 @@ form {
     background-color: rgb(184, 33, 126);
     border: none;
     color: var(--white);
+    transition: 200ms ease-in-out;
+}
+
+.btn-add:hover {
+    background-color: rgb(128, 24, 88);
+    transition: 200ms;
 }
 
 .btn-del-task {
