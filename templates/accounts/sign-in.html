@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/signin.css'%}?v=3.4">
+    <link rel="stylesheet" href="{% static 'css/signin.css'%}?v=3.5">
     <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
     <title>Sign In</title>
 </head>
@@ -29,6 +29,13 @@
                 <button type="submit" class="btn__login">Login</button>
                 <a href="{% url 'cadastro' %}" class="form__link">Dont have account ? Sign up</a>
             </form>
+            <section class="login-apps">
+                <p class="text-login-services">Login with:</p>
+                <div class="login-services">
+                    <a href="#"><img width="40" height="40" src="https://img.icons8.com/3d-fluency/94/github-logo.png" alt="github-logo"/></a>
+                    <a href="#"><img width="40" height="40" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo"/></a>
+                </div>
+            </section>
         </div>
     </main>
 </body>
