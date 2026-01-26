@@ -86,15 +86,24 @@ main {
     font-size: 3rem;
 }
 
-@media (max-width:1568px){
+@media (max-width:1302px){
+    .item {
+        margin-left: 15px;
+    }
+}
 
-    
-
-    .itens {
+@media (max-width:1212px) {
+    main {
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
     }
+    .navbar__left {
+        height: 10vh;
+        width: 100%;
+    }
 
+    .tasks {
+        display: flex;
+        justify-content: space-around;
+    }
 }
