@@ -125,5 +125,14 @@ main {
 }
 
 @media (max-width:911px){
-    
+
+    .title {
+        font-size: 3.4rem;
+    }
+
+    .itens {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
 }
