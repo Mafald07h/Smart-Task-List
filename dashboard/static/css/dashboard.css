@@ -85,3 +85,16 @@ main {
     font-weight: 500;
     font-size: 3rem;
 }
+
+@media (max-width:1568px){
+
+    
+
+    .itens {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
