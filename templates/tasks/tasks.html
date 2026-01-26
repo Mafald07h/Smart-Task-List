@@ -2,18 +2,13 @@
 {% load static %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/tasks.css' %}?v=3.5">
+<link rel="stylesheet" href="{% static 'css/tasks.css' %}?v=3.6">
 <script src="{% static 'script/tasks.js' %}" defer></script>
 {% endblock %}
 
 {% block content %}
 <main>
-    <div class="navbar__left">
-        <div class="tasks">
-            <a href="{% url 'logout_account' %}" class="dashboard__link">Logout</a>
-            <a href="{% url 'dashboard' %}" class="dashboard__link">Dashboard</a>
-        </div>
-    </div>
+    {% impletemts "partials/_navbar-dashboard.html" %}
     <section class="section-tasks">
         <h1 class="title">Tasks</h1>
         <table class="table-tasks">
