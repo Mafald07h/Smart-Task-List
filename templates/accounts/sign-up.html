@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/signup.css' %}?v=3.3">
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}?v=3.4">
     <title>Sign Up</title>
 </head>
 <body>
@@ -24,7 +24,7 @@
                 <input type="password" required placeholder="Password" name="senha1" class="input__form">
                 <label for="senha2" class="label__form">Confirm password</label>
                 <input type="password" required placeholder="Password" name="senha2" class="input__form">
-                <button type="submit" class="btn__login">Sign Up</button>
+                <button type="submit" class="btn__create">Sign Up</button>
                 <a href="{% url 'login' %}" class="form__link">Have an account ? Sign in</a>
             </form>
         </div>
