@@ -43,7 +43,19 @@ main {
 }
 
 .btn-change-theme {
-    padding: 5px 20px;
+    padding: 9px 20px;
+    cursor: pointer;
+    letter-spacing: 1.2px;
+    border-radius: 7px;
+    background-color: var(--black);
+    border: none;
+    color: var(--white);
+    transition: 200ms ease-in-out;
+}
+
+.btn-change-theme:hover {
+    transform: scale(1.10);
+    transition: 200ms;
 }
 
 .title {
