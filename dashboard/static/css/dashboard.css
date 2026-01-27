@@ -42,11 +42,6 @@ main {
     transition: 200ms;
 }
 
-.dashboard__link img {
-    position: absolute;
-    right: 90px;
-}
-
 .title {
     font-size: 4rem;
 }
