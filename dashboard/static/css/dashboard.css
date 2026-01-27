@@ -111,6 +111,14 @@ main {
     background-image: linear-gradient(180deg, #000000,#222222);
 }
 
+.title-dark {
+    color: var(--white);
+}
+
+.subtext-dark {
+    color: var(--white);
+}
+
 
 @media (max-width:1302px){
     .item {
