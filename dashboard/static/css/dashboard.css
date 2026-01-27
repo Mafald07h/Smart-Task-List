@@ -42,6 +42,10 @@ main {
     transition: 200ms;
 }
 
+.btn-change-theme {
+    padding: 5px 20px;
+}
+
 .title {
     font-size: 4rem;
 }
