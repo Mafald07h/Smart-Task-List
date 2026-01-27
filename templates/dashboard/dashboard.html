@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="{% static 'css/dashboard.css' %}?v=3.7">
     <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
     {% block extra_css %}{% endblock %}
-    <script src="{% static 'script/dashboard.js' %}" defer></script>
+    <script src="{% static 'script/dashboard.js' %}?v=3.1" defer></script>
     <title>Dashboard - Page </title>
 </head>
 
-<body>
+<body class="normal" data-body>
     {% block content %}
     <main>
         {% include 'partials/_navbar.html' %}
