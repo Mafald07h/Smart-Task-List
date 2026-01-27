@@ -129,6 +129,11 @@ main {
     color: var(--white);
 }
 
+.item-dark {
+    background-color: var(--black);
+    color: var(--white);
+}
+
 
 @media (max-width:1302px){
     .item {
