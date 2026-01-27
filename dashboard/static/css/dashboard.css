@@ -114,6 +114,7 @@ main {
 
 .navbar__left-dark {
     background-color: #222020;
+    height: 100vh;
 }
 
 .title-dark {
@@ -121,6 +122,10 @@ main {
 }
 
 .subtext-dark {
+    color: var(--white);
+}
+
+.dashboard__link-dark {
     color: var(--white);
 }
 

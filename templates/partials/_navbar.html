@@ -1,8 +1,8 @@
 {% load static %}
-<div class="navbar__left">
-        <div class="tasks" data-navbar>
+<div class="navbar__left" data-navbar>
+        <div class="tasks">
             <button id="changeTheme" class="btn-change-theme">Change Theme</button>
-            <a href="{% url 'logout_account' %}" class="dashboard__link">Logout</a>
-            <a href="{% url 'dashboard' %}" class="dashboard__link">Dashboard</a>
+            <a href="{% url 'logout_account' %}" class="dashboard__link" data-dashboard-link>Logout</a>
+            <a href="{% url 'dashboard' %}" class="dashboard__link" data-dashboard-link>Dashboard</a>
         </div>
     </div>
