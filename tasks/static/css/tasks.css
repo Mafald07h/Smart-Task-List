@@ -8,6 +8,14 @@ main {
     display: flex;
 }
 
+.title-dark {
+    color: var(--white);
+}
+
+.dashboard__link-dark {
+    color: var(--black);
+}
+
 .navbar__left {
     background-color: var(--white);
     box-shadow: 1px 5px 10px var(--black);
