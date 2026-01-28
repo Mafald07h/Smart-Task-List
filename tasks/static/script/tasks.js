@@ -4,12 +4,14 @@ const containerTasks = document.getElementById("container-tasks")
 const btnChangeTheme = document.getElementById("changeTheme")
 const titleDark = document.querySelector("[data-title]")
 const linkDark = document.querySelectorAll("[data-dashboard-link]")
+const navbarLeftDark = document.querySelector("[data-navbar]")
 
 btnChangeTheme.addEventListener("click", ()=>{
     titleDark.classList.toggle("title-dark")
     linkDark.forEach(link, ()=>{
         link.classList.toggle("dashboard__link-dark")
     })
+    navbarLeftDark.classList.toggle("navbar__left-dark")
 })
 
 btnAddTask.addEventListener("click",()=>{
