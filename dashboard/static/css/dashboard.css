@@ -148,6 +148,11 @@ main {
 }
 
 @media (max-width:1212px) {
+
+    body {
+        height: 100vh;
+    }
+
     main {
         display: flex;
         flex-direction: column;
