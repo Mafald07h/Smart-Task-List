@@ -25,6 +25,11 @@ main {
     width: 20%;
 }
 
+.navbar__left-dark {
+    background-color: #222020;
+    height: 100vh;
+}
+
 .btn-change-theme {
     margin-left: 30px;
 }
