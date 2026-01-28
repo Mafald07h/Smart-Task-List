@@ -157,9 +157,15 @@ main {
         display: flex;
         flex-direction: column;
     }
+
     .navbar__left {
         height: 10vh;
         width: 100%;
+    }
+
+    .btn-change-theme {
+        padding: 1px 20px;
+        transform: translateY(-20);
     }
 
     .tasks {
