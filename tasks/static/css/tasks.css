@@ -78,6 +78,11 @@ td {
     transition: 200ms;
 }
 
+.btn-add-task-dark {
+    background-color: var(--white);
+    color: var(--black);
+}
+
 .container-tasks-none {
     display: none;
 }
