@@ -20,6 +20,15 @@ main {
     width: 20%;
 }
 
+.text-login-message {
+    font-weight: 200;
+    font-style: italic;
+}
+
+.text-login-message-dark {
+    color: var(--white);
+}
+
 .tasks {
     margin-top: 20px;
 }

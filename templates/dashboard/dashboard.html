@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}?v=3.1">
-    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}?v=3.8">
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}?v=3.9">
     <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
     {% block extra_css %}{% endblock %}
     <script src="{% static 'script/dashboard.js' %}?v=3.1" defer></script>
@@ -20,7 +20,7 @@
             <div class="texts">
                 {% for message in messages%}
                     <div class="message__show">
-                        <p>{{message}}</p>
+                        <p class="text-login-message" data-login-message>{{message}}</p>
                     </div>
                 {% endfor %}
                  <h1 class="title" data-title>Dashboard</h1>
