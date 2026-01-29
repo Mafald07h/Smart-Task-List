@@ -1,7 +1,9 @@
 from django.shortcuts import render,redirect
+from django.contrib.auth.decorators import login_required
 from tasks.models import Task
 
 # Create your views here.
+@login_required
 def tasks_view(request):
     tasks = Task.objects.filter(user=request.user).order_by("nome_task")
     return render(request,"tasks/tasks.html",{"tasks":tasks})
