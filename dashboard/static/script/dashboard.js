@@ -9,6 +9,7 @@ const titleDark = document.querySelector("[data-title]")
 const subtextDark = document.querySelector("[data-subtext]")
 const dashboardLink = document.querySelectorAll("[data-dashboard-link]")
 const itemDashboard = document.querySelectorAll("[data-item]")
+const textLoginMessage = document.querySelector("[data-login-message]")
 
 btnChangeTheme.addEventListener("click", ()=> {
     bodyElement.classList.toggle("body-dark")
@@ -24,4 +25,6 @@ btnChangeTheme.addEventListener("click", ()=> {
     itemDashboard.forEach(item => {
         item.classList.toggle("item-dark")
     })
+
+    textLoginMessage.classList.toggle("text-login-message-dark")
 })
