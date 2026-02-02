@@ -26,4 +26,5 @@ urlpatterns = [
     path('tasks/',tasks_view,name="tasks"),
     path('add_task/',add_tasks,name="add_task"),
     path('delete_task',delete_task,name="delete_task"),
+    path('accounts/',include('allauth.urls')),
 ]
