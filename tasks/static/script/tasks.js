@@ -1,6 +1,7 @@
 const btnAddTask = document.getElementById("addTasks")
 const containerTasks = document.getElementById("container-tasks")
 
+// Change Theme
 const btnChangeTheme = document.getElementById("changeTheme")
 const titleDark = document.querySelector("[data-title]")
 const linkDark = document.querySelectorAll("[data-dashboard-link]")
