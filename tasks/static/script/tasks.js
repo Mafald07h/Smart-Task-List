@@ -8,7 +8,7 @@ const linkDark = document.querySelectorAll("[data-dashboard-link]")
 const navbarLeftDark = document.querySelector("[data-navbar]")
 
 btnChangeTheme2.addEventListener("click", ()=>{
-    titleDark2.classList.toggle("title-dark")
+    titleDark2.classList.toggle("title-dark2")
     linkDark.forEach(link, ()=>{
         link.classList.toggle("dashboard__link-dark")
     })
