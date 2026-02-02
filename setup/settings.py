@@ -133,3 +133,20 @@ STATICFILES_DIRS = [BASE_DIR / 'setup' / 'static']
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+SOCIALACCOUNT_PROVIDERS = {
+    'github': {
+        'APP': {
+            'client_id':'',
+            'secret':'',
+            'key':''
+        }
+    }
+}
+
+LOGIN_REDIRECT_URL = '/dashboard'
+
+SOCIALACCOUNT_LOGIN_ON_GET = True
+
+ACCOUNT_LOGOUT_ON_GET = True
