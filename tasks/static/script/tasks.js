@@ -6,6 +6,7 @@ const btnChangeTheme2 = document.getElementById("changeTheme")
 const titleDark2 = document.querySelector("[data-title]")
 const linkDark = document.querySelectorAll("[data-dashboard-link]")
 const navbarLeftDark = document.querySelector("[data-navbar]")
+const nameColumnDark = document.querySelectorAll("[data-name-column]")
 
 btnChangeTheme2.addEventListener("click", ()=>{
     titleDark2.classList.toggle("title-dark2")
@@ -13,6 +14,10 @@ btnChangeTheme2.addEventListener("click", ()=>{
         link.classList.toggle("dashboard__link-dark")
     })
     navbarLeftDark.classList.toggle("navbar__left-dark")
+
+    nameColumnDark.forEach(column, ()=> {
+        column.classList.toggle("column-dark")
+    })
 })
 
 btnAddTask.addEventListener("click",()=>{

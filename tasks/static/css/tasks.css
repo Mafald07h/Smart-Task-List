@@ -86,6 +86,12 @@ td {
 }
 
 
+.column-dark {
+    background-color: #222020;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
 .container-tasks-none {
     display: none;
 }
