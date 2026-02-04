@@ -106,6 +106,10 @@ td {
     height: auto;
 }
 
+.container-tasks-show-dark {
+    background-color: #222020;
+}
+
 form {
     display: flex;
     justify-content: left;
