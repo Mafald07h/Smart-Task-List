@@ -4,7 +4,7 @@
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/tasks.css' %}?v=4.1">
 <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
-<script src="{% static 'script/tasks.js' %}?v=3.3" defer></script>
+<script src="{% static 'script/tasks.js' %}?v=3.4" defer></script>
 {% endblock %}
 
 {% block content %}
@@ -37,8 +37,8 @@
             {% endfor %}
         </table>
         <button class="btn-add-task" id="addTasks">Adicionar task</button>
-        <div id="container-tasks" class="container-tasks-none" data-form-dark>
-            <form action="{% url 'add_task' %}" method="post">
+        <div id="container-tasks" class="container-tasks-none" >
+            <form action="{% url 'add_task' %}" method="post" data-form-dark>
                 {% csrf_token %}
                 <label for="nome_task">Nome da Task</label>
                 <input type="text" placeholder="Nome da task" required name="nome_task" class="input-tasks">
