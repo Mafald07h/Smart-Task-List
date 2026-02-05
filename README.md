@@ -20,3 +20,7 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" height="30" alt="Django logo" />
 </div>
+
+## Algumas implementações
+- Adicionado o tema DARK
+- Adicionar, ler e excluir uma tarefa
