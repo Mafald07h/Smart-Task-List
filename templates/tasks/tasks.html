@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/tasks.css' %}?v=4.1">
+<link rel="stylesheet" href="{% static 'css/tasks.css' %}?v=4.2">
 <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
 <script src="{% static 'script/tasks.js' %}?v=3.4" defer></script>
 {% endblock %}
@@ -31,6 +31,11 @@
                         {% csrf_token %}
                         <input type="hidden" name="task_id" value="{{task.id}}">
                         <button class="btn-del-task" type="submit"><img width="24" height="24" src="https://img.icons8.com/liquid-glass/48/trash.png" alt="trash"/>Excluir</button>
+                    </form>
+                    <form action="#" method="post">
+                        {% csrf_token %}
+                        <input type="hidden" name="task_id" value="{{task.id}}">
+                        <button class="btn-edit-task" type="submit"><img width="24" height="24" src="https://img.icons8.com/ios/50/create-new.png" alt="create-new"/>Editar</button>
                     </form>
                 </td>
             </tr>

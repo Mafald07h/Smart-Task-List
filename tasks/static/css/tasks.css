@@ -147,6 +147,16 @@ form {
     box-shadow: 1px 1px 10px var(--black);
 }
 
+.btn-edit-task {
+    width: 100%;
+    padding: 4px 15px;
+    background-color: rgb(236, 183, 39);
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 1px 10px var(--black);
+}
+
 
 @media (max-width:1212px) {
 
