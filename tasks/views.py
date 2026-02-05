@@ -27,3 +27,15 @@ def delete_task(request):
             user = request.user
         ).delete()
     return redirect("tasks")
+
+def editar_task(request):
+    if request.method == "POST":
+        task_id = request.POST.get("task_id")
+        task = Task.objects.get(id=task_id,user=request.user)
+
+        task.nome_task = request.POST.get("nome_task")
+        task.data_inicio = request.POST.get("data_inicio")
+        task.data_fim = request.POST.get("data_fim")
+        task.descricao = request.POST.get("descricao")
+        task.save()
+    return redirect('tasks',{'task':task})
