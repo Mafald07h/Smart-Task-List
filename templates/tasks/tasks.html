@@ -32,11 +32,6 @@
                         <input type="hidden" name="task_id" value="{{task.id}}">
                         <button class="btn-del-task" type="submit"><img width="24" height="24" src="https://img.icons8.com/liquid-glass/48/trash.png" alt="trash"/>Excluir</button>
                     </form>
-                    <form action="{% url 'editar_task' %}" method="post">
-                        {% csrf_token %}
-                        <input type="hidden" name="task_id" value="{{task.id}}">
-                        <button class="btn-edit-task" type="submit"><img width="24" height="24" src="https://img.icons8.com/ios/50/create-new.png" alt="create-new"/>Editar</button>
-                    </form>
                 </td>
             </tr>
             {% endfor %}
